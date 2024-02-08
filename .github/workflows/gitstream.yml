@@ -32,7 +32,7 @@ on:
 
 jobs:
   gitStream:
-    timeout-minutes: 5
+    timeout-minutes: 15
     runs-on: ubuntu-latest
     name: gitStream workflow automation
     steps:
@@ -46,4 +46,3 @@ jobs:
           client_payload: ${{ github.event.inputs.client_payload }}
           installation_id: ${{ github.event.inputs.installation_id }}
           resolver_url: ${{ github.event.inputs.resolver_url }}
-          resolver_token: ${{ github.event.inputs.resolver_token }}
